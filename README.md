@@ -1,14 +1,15 @@
 # Angular Electron
 
 ## Install Node.js
+Install Nodejs from `https://nodejs.org/en/download/`
 
 ## Install dependencies
 
-1. Run command `npm install`
+Run command `npm install`
 
 ## Run application for development
 
-1. Run command `npm run electron-build`
+Run command `npm run electron-build`
 
 ## Build executable for desktop platforms
 
