@@ -1,7 +1,7 @@
 # Angular Electron
 
 ## Install Node.js
-Install Nodejs from `https://nodejs.org/en/download/`
+Install [Nodejs](https://nodejs.org/en/download/)
 
 ## Install dependencies
 
