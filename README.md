@@ -21,5 +21,5 @@ Note: Linux and MacOS developers will need to install WineHQ if they plan on bui
   - Run command `electron-packager . --platform=[TARGET PLATFORM]`
 
 TARGET PLATFORMS:
-  For Windows: win32
-  For MacOs: darwin
+- For Windows: win32
+- For MacOs: darwin
