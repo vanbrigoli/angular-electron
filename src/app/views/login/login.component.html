@@ -6,12 +6,6 @@
       <h5 class="hint">Use your Google account to sign in or create one now</h5>
     </label>
     <div class="login-group">
-      <div class="auth-source select">
-        <select id="login-auth-source-1">
-          <option>Local Users</option>
-          <option>Administrator</option>
-        </select>
-      </div>
       <input class="username" type="text" id="login_username" placeholder="Username">
       <input class="password" type="password" id="login_password" placeholder="Password">
       <div class="checkbox">
@@ -23,9 +17,10 @@
       <div class="error active">
         Invalid user name or password
       </div>
-      <button type="submit" class="btn btn-primary">LOGIN</button>
-      <a href="" class="signup">Sign up for a Google account</a>
+      <button class="btn btn-primary">login</button>
+      <a href="" class="signup">Sign up now</a>
     </div>
   </form>
+  <button (click)="loginUsingGoogle()" class="btn btn-warning" style="border-radius: 0;">login with Google</button>
 </div>
 

@@ -12,4 +12,8 @@ import { LoginRoutingModule } from './login-routing.module';
   ],
   declarations: [LoginComponent]
 })
-export class LoginModule { }
+class LoginModule { }
+
+export function loginEntryPoint() {
+  return LoginModule;
+}
