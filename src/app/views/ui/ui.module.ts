@@ -7,12 +7,14 @@ import { HeaderComponent } from './layout/header/header.component';
 import { MainComponent } from './layout/main/main.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 
+import { UiRoutingModule } from './ui-routing.module';
+
 @NgModule({
   imports: [
     CommonModule,
-    ClarityModule
+    ClarityModule,
+    UiRoutingModule
   ],
-  declarations: [LayoutComponent, HeaderComponent, MainComponent, SidebarComponent],
-  exports: [LayoutComponent]
+  declarations: [LayoutComponent, HeaderComponent, MainComponent, SidebarComponent]
 })
 export class UiModule { }

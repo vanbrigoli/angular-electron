@@ -1,10 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ClarityModule } from 'clarity-angular';
-
-import { UiModule } from './ui/ui.module';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+
+import { environment } from '@env/environment';
 
 @NgModule({
   declarations: [
@@ -12,8 +16,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     ClarityModule.forRoot(),
-    UiModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
