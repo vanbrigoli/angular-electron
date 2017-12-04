@@ -8,6 +8,6 @@ import { AuthService } from './index';
 export class CoreModule {
   // Prevent re-importing core module
   constructor(@Optional() @SkipSelf() core: CoreModule) {
-    if(core) throw new Error("Thou shall not run.");
+    if(core) throw new Error("Core module already imported.");
   }
 }
