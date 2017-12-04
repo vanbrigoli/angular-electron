@@ -6,7 +6,7 @@ import { AuthService } from './index';
   providers: [AuthService]
 })
 export class CoreModule {
-  // Prevent importing core module
+  // Prevent re-importing core module
   constructor(@Optional() @SkipSelf() core: CoreModule) {
     if(core) throw new Error("Thou shall not run.");
   }
