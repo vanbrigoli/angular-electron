@@ -1,41 +1,45 @@
-<form #userRegistrationForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted">
-  <section class="form-block">
-    <label>Add User Information</label>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <label for="email"
-             aria-haspopup="true"
-             role="tooltip"
-             class="tooltip tooltip-validation tooltip-md"
-             [class.invalid]="emailInput.invalid && (emailInput.dirty || emailInput.touched)">
-        <input type="text" id="email" placeholder="Enter email"
-               required
-               name="email"
-               [(ngModel)]="model.email"
-               #emailInput="ngModel">
-        <span class="tooltip-content">
+<div class="row flex-items-xs-center">
+  <div class="col-xs-4 flex-xs-middle">
+    <form #userRegistrationForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted">
+      <section class="form-block">
+        <label>Add User Information</label>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <label for="email"
+                 aria-haspopup="true"
+                 role="tooltip"
+                 class="tooltip tooltip-validation tooltip-md"
+                 [class.invalid]="emailInput.invalid && (emailInput.dirty || emailInput.touched)">
+            <input type="text" id="email" placeholder="Enter email"
+                   required
+                   name="email"
+                   [(ngModel)]="model.email"
+                   #emailInput="ngModel">
+            <span class="tooltip-content">
                     Email is Required.
                 </span>
-      </label>
-    </div>
-    <div class="form-group">
-      <label for="userPassword">Password</label>
-      <label for="userPassword"
-             aria-haspopup="true"
-             role="tooltip"
-             class="tooltip tooltip-validation tooltip-md"
-             [class.invalid]="userPasswordInput.invalid && (userPasswordInput.dirty || userPasswordInput.touched)">
-        <input type="password" id="userPassword" placeholder="Enter password"
-               required
-               name="password"
-               [(ngModel)]="model.password"
-               #userPasswordInput="ngModel">
-        <span class="tooltip-content">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="userPassword">Password</label>
+          <label for="userPassword"
+                 aria-haspopup="true"
+                 role="tooltip"
+                 class="tooltip tooltip-validation tooltip-md"
+                 [class.invalid]="userPasswordInput.invalid && (userPasswordInput.dirty || userPasswordInput.touched)">
+            <input type="password" id="userPassword" placeholder="Enter password"
+                   required
+                   name="password"
+                   [(ngModel)]="model.password"
+                   #userPasswordInput="ngModel">
+            <span class="tooltip-content">
                     Password is Required.
                 </span>
-      </label>
-    </div>
-    <button class="btn btn-primary" type="submit"
-            [disabled]="userRegistrationForm.form.invalid">Sign up</button>
-  </section>
-</form>
+          </label>
+        </div>
+        <button class="btn btn-primary" type="submit"
+                [disabled]="userRegistrationForm.form.invalid">Sign up</button>
+      </section>
+    </form>
+  </div>
+</div>
